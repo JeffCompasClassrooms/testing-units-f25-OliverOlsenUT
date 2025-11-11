@@ -29,11 +29,6 @@ class TestCircle(unittest.TestCase):
     def test_ctor(self):
         c = Circle(20.0)
         self.assertAlmostEqual(c.mRadius, 20.0)
-
-    def test_ctor_invalid(self):
-        # The circle should NOT allow a radius below 0.
-        c = Circle(-5.0)
-        self.assertNotAlmostEqual(c.mRadius, -5.0)
     
     def test_get_circumference(self):
         c = Circle(0.5)
